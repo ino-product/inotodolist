@@ -1,0 +1,8 @@
+# Publish only the app source and its build helper.
+*
+!.gitignore
+!README.md
+!dist/
+!dist/**
+!scripts/
+!scripts/**
