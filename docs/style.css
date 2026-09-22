@@ -1,0 +1,114 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#17221f;background:#fdfbf8;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{border:0;cursor:pointer;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:2px solid #526c62;outline-offset:4px}.app{max-width:640px;min-height:100dvh;margin:auto;background:#fdfbf8}header{background:#e5dcd6;padding:calc(env(safe-area-inset-top) + 54px) 30px 15px}nav{display:flex;align-items:center;justify-content:center;gap:22px}nav button{background:none;font-size:21px;font-weight:650;white-space:nowrap;padding:4px 0;color:#aaa49f}.tab.active{color:#354f45}nav i{height:17px;width:1px;background:#bdb4ad}#weekButton{color:#111}.triangle{display:inline-block;margin:0 0 3px 7px;border-top:8px solid currentColor;border-left:6px solid transparent;border-right:6px solid transparent}main{padding:21px 18px 110px}.grid{display:grid;grid-template-columns:96px repeat(7,minmax(0,1fr));align-items:center;row-gap:11px;column-gap:3px}.weekday{color:#b8b6b2;text-align:center;font-weight:600;font-size:18px;padding-bottom:1px}.habit-name{text-align:left;background:none;padding:3px 5px 3px 1px;font-size:17px;font-weight:650;line-height:1.5;overflow-wrap:anywhere;min-height:44px}.check{padding:4px 0;background:none;display:grid;place-items:center;min-height:44px;width:100%;color:var(--color)}.ring{width:100%;max-width:38px;aspect-ratio:1;border:1.4px solid #8d8e89;border-radius:50%;display:grid;place-items:center;transition:background .16s,transform .16s}.check:active .ring{transform:scale(.88)}.check[aria-pressed=true] .ring{background:var(--color);border-color:var(--color)}.ring svg{width:75%;height:75%;fill:none;stroke:white;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}.check[aria-pressed=false] svg{visibility:hidden}footer{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,640px);height:calc(84px + env(safe-area-inset-bottom));padding:13px 21px calc(18px + env(safe-area-inset-bottom));background:#e5dcd6;display:flex;align-items:flex-start;justify-content:space-between}footer button{width:48px;height:48px;background:none;color:#242523;display:grid;place-items:center}footer button.selected{color:#000}footer svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}dialog{width:calc(100% - 40px);max-width:380px;background:#fdfbf8;color:#354f45;border:0;border-radius:18px;padding:24px;box-shadow:0 18px 90px #0002}dialog::backdrop{background:#28231e40;backdrop-filter:blur(3px)}.dialog-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}h2{margin:0;font-size:21px}.close{font-size:28px;background:none;color:#777}.close, .week-nav button{min-width:40px;min-height:40px}label,legend{font-size:14px;color:#6d736e}input{display:block;width:100%;min-height:46px;border:1px solid #d8d5ce;border-radius:8px;background:transparent;padding:10px;color:#354f45;margin-top:8px;font-size:16px}fieldset{border:0;padding:0;margin:24px 0}.swatches{display:flex;gap:14px;margin-top:12px}.swatch{width:32px;height:32px;border-radius:50%;background:var(--color)}.swatch[aria-pressed=true]{outline:2px solid var(--color);outline-offset:4px}.actions{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.save{background:#354f45;color:white;padding:12px 24px;border-radius:8px}.text-button{background:none;color:#927369;font-size:14px}.week-nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}.week-nav button{background:#eee8e2;border-radius:50%;font-size:27px}.wide{width:100%;margin-top:24px}.todo-form{display:flex;gap:10px;margin:4px 0 24px}.todo-form input{margin:0}.todo-form button{background:#e5dcd6;border-radius:8px;width:48px;flex-shrink:0;font-size:26px}.todo-row{display:flex;align-items:center;gap:12px;border-bottom:1px solid #eae5df;padding:12px 0;min-height:60px}.todo-row .check{width:30px;flex-shrink:0}.todo-row .ring{width:26px}.todo-text{flex:1;overflow-wrap:anywhere}.todo-row.done .todo-text{text-decoration:line-through;color:#aaa59f}.remove-task{background:none;color:#a19b95;font-size:22px;width:36px;height:40px}.empty{text-align:center;color:#a29b92;padding-top:70px;font-size:15px;line-height:2}.empty small{font-size:14px}#toast{position:fixed;bottom:110px;left:50%;transform:translateX(-50%);background:#354f45;color:white;border-radius:8px;padding:10px 16px;font-size:14px;opacity:0;pointer-events:none}#toast.show{opacity:1}@media(min-width:600px){header{padding-top:60px}main{padding:30px 30px 130px}.grid{grid-template-columns:135px repeat(7,minmax(0,1fr));row-gap:15px;column-gap:9px}.ring{max-width:48px}.habit-name{font-size:20px}.weekday{font-size:20px}body{background:#ede7e1}}@media(max-width:360px){main{padding-left:12px;padding-right:12px}.grid{grid-template-columns:84px repeat(7,minmax(0,1fr));column-gap:2px}.habit-name{font-size:15px}nav{gap:18px}}
+
+.weekday{display:flex;flex-direction:column;align-items:center;gap:5px;padding-bottom:3px}.day-number{display:grid;place-items:center;width:100%;max-width:38px;height:27px;border-radius:50%;font-size:15px;font-weight:500;font-variant-numeric:tabular-nums;color:#a6a49e}.day-label{line-height:1.5}.weekday.is-today .day-number{background:#e5dcd6;color:#38554a;font-weight:650}.weekday.is-today .day-label{color:#64776c}@media(min-width:600px){.day-number{max-width:44px;height:30px;font-size:16px}}
+
+/* Fine, low-contrast paper tooth beneath the unchanged interface. */
+.app{display:flex;flex-direction:column}
+main{flex:1;position:relative;isolation:isolate;background-color:#fdfbf8}
+main::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22360%22%20height%3D%22360%22%3E%3Cfilter%20id%3D%22paper%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%25%22%20height%3D%22100%25%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.82%20.95%22%20numOctaves%3D%223%22%20stitchTiles%3D%22stitch%22%20seed%3D%2212%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3CfeComponentTransfer%3E%3CfeFuncR%20type%3D%22linear%22%20slope%3D%221.15%22%20intercept%3D%22-.075%22%2F%3E%3CfeFuncG%20type%3D%22linear%22%20slope%3D%221.15%22%20intercept%3D%22-.075%22%2F%3E%3CfeFuncB%20type%3D%22linear%22%20slope%3D%221.15%22%20intercept%3D%22-.075%22%2F%3E%3C%2FfeComponentTransfer%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23paper%29%22%2F%3E%3C%2Fsvg%3E");background-size:180px 180px;background-repeat:repeat;mix-blend-mode:multiply;opacity:.075}
+main>*{position:relative;z-index:1}
+footer{z-index:2}
+
+.month-label{align-self:start;display:flex;align-items:center;min-height:27px;padding-left:1px;color:#a6a49e;font-size:15px;font-weight:500;font-variant-numeric:tabular-nums;line-height:1.4}@media(min-width:600px){.month-label{min-height:30px;font-size:16px}}
+
+/* Month occupies one date-sized slot at the right edge of the label column. */
+.grid{container-type:inline-size;--label-column:96px;--date-gap:3px}
+.month-label{justify-self:end;justify-content:center;padding-left:0;text-align:center;width:calc((100cqw - var(--label-column) - 7 * var(--date-gap)) / 7)}
+@media(min-width:600px){.grid{--label-column:135px;--date-gap:9px}}
+@media(max-width:360px){.grid{--label-column:84px;--date-gap:2px}}
+
+/* Optical correction for the fuller Chinese month glyph. */
+.month-label{font-size:14px}@media(min-width:600px){.month-label{font-size:15px}}
+
+header{position:relative}#help{position:absolute;top:calc(env(safe-area-inset-top) + 14px);right:20px;display:grid;place-items:center;width:32px;height:32px;background:transparent;border:1px solid #bdb4ad;border-radius:50%;color:#7b8279;font-size:16px}#guide{padding:26px}#guide .guide-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}#guideProgress{font-size:14px;color:#8c928a}#guideText{font-size:16px;line-height:1.9;margin:20px 0 16px}#guideHint{font-size:14px;line-height:1.8;color:#85877f;margin:0 0 26px}#guide .actions{justify-content:flex-end}#guideBack{margin-right:auto}#guide [hidden]{display:none}
+
+/* The paper now extends to the bottom without a toolbar. */
+main{padding-bottom:calc(30px + env(safe-area-inset-bottom))}
+.add-habit-hint{display:block;width:100%;background:none;border:0;margin:15px 0 0;cursor:pointer}
+#toast{bottom:calc(24px + env(safe-area-inset-bottom));z-index:3}
+
+
+.custom-color{display:inline-flex;align-items:center;gap:9px;margin-top:18px;color:#6d736e;font-size:14px;cursor:pointer}.custom-color-preview{width:24px;height:24px;border-radius:50%;background:#b6a1a8;border:1px solid #d8d5ce}.custom-color input{width:1px;height:1px;position:absolute;opacity:0;pointer-events:none}.custom-color:focus-within{outline:2px solid #526c62;outline-offset:4px;border-radius:4px}
+
+#colorExtras{margin-top:18px}.custom-color{display:flex;align-items:center;gap:9px;color:#6d736e;font-size:14px;cursor:pointer}.custom-color-preview{width:24px;height:24px;border-radius:50%;background:#b6a1a8;border:1px solid #d8d5ce;flex:0 0 auto}.custom-color input{width:1px;height:1px;position:absolute;opacity:0;pointer-events:none}.custom-color:focus-within{outline:2px solid #526c62;outline-offset:4px;border-radius:4px}.pin-color{margin-left:auto;background:#eee8e2;color:#526158;border-radius:6px;padding:7px 9px;font-size:13px}.color-section{margin-top:17px}.color-section-title{display:block;color:#6d736e;font-size:14px;margin-bottom:9px}.saved-colors{display:flex;flex-wrap:wrap;align-items:center;gap:12px;min-height:27px}.saved-color{width:27px;height:27px;border-radius:50%;background:var(--color);border:1px solid #00000012}.saved-color:focus-visible{outline-color:var(--color)}.color-empty{color:#aaa49f;font-size:13px}
+
+.custom-controls{display:flex;align-items:center;gap:12px}.custom-controls .custom-color{flex:1}.custom-controls .pin-color{margin-left:auto}
+
+.color-picker{--picker-color:#b6a1a8}.picker-copy{font-size:14px;line-height:1.8;color:#85877f;margin:0 0 20px}.color-picker input[type=color]{width:100%;height:78px;padding:5px;border:1px solid #d8d5ce;border-radius:10px;background:var(--picker-color);cursor:pointer}.color-picker input[type=color]::-webkit-color-swatch-wrapper{padding:0}.color-picker input[type=color]::-webkit-color-swatch{border:0;border-radius:6px}.custom-controls .custom-color{margin-top:0;background:none;border:0;padding:0}.custom-controls .custom-color-preview{background:var(--custom-color,#b6a1a8)}
+
+/* Today: a quiet pencil-style circle, with no fill behind the number. */
+.weekday.is-today .day-number{width:100%;max-width:38px;height:27px;display:grid;place-items:center;box-sizing:border-box;padding:0;background:none;border:0;border-radius:0;color:#a6615e;font-weight:650;line-height:1}.weekday.is-today .day-number-text{display:block;transform:none}.weekday.is-today .day-label{color:#a6615e}
+
+/* Long-press deletion menu for user-saved colours. */
+.color-delete-popover{position:fixed;z-index:20;padding:4px;background:#fffdfa;border:1px solid #ddd3cb;border-radius:8px;box-shadow:0 5px 18px #4a40331f}
+.color-delete-popover::after{content:"";position:absolute;left:50%;bottom:-5px;width:8px;height:8px;background:#fffdfa;border-right:1px solid #ddd3cb;border-bottom:1px solid #ddd3cb;transform:translateX(-50%) rotate(45deg)}
+.color-delete-button{position:relative;z-index:1;min-height:30px;padding:5px 10px;border-radius:5px;background:none;color:#9b5b57;font-size:13px;font-weight:600;white-space:nowrap}
+.color-delete-button:active{background:#f3e7e2}
+/* A dialog is its own top-layer coordinate system on desktop browsers. */
+dialog{position:absolute}
+dialog .color-delete-popover.in-dialog{position:absolute}
+/* Keep the delete bubble in the colour field itself: stable in both modal and desktop layouts. */
+#colors{position:relative;overflow:visible}
+#colors .color-delete-popover.in-colors{position:absolute;z-index:30}
+/* The pointer always meets the centre of the colour that opened the menu. */
+#colors .color-delete-popover.in-colors{--pointer-x:50%;}
+#colors .color-delete-popover.above::after{left:var(--pointer-x);bottom:-5px;top:auto;border-left:0;border-top:0;border-right:1px solid #ddd3cb;border-bottom:1px solid #ddd3cb;transform:translateX(-50%) rotate(45deg)}
+#colors .color-delete-popover.below::after{left:var(--pointer-x);top:-5px;bottom:auto;border-right:0;border-bottom:0;border-left:1px solid #ddd3cb;border-top:1px solid #ddd3cb;transform:translateX(-50%) rotate(45deg)}
+
+/* Habit check-in: empty → done → missed → empty. */
+.habit-check .cross{display:none}
+.habit-check.state-missed .ring{background:color-mix(in srgb,var(--color) 10%,#fdfbf8);border-color:var(--color)}
+.habit-check.state-missed .tick{display:none}
+.habit-check.state-missed .cross{display:block;visibility:visible;stroke:var(--color);stroke-width:3.2}
+
+/* Press and drag a habit name to change its row order. */
+.habit-name{cursor:grab;touch-action:pan-y}
+.habit-name:active{cursor:grabbing}
+body.reordering{user-select:none;-webkit-user-select:none}
+body.reordering .habit-name{cursor:grabbing}
+.habit-name.reorder-source{opacity:.38}
+.habit-name.reorder-target{position:relative}
+.habit-name.reorder-target::before{content:"";position:absolute;left:1px;right:8px;top:-5px;height:2px;border-radius:2px;background:currentColor;opacity:.65}
+
+/* Saved colours: wrap on desktop; keep a compact, swipeable strip on phones. */
+@media (min-width:600px){
+  .swatches{flex-wrap:wrap}
+}
+@media (max-width:599px){
+  .swatches{flex-wrap:nowrap;overflow-x:auto;overflow-y:visible;padding:5px 4px 8px;margin-left:-4px;margin-right:-4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .swatches::-webkit-scrollbar{display:none}
+  .swatches .swatch{flex:0 0 32px}
+}
+
+/* One quiet menu gathers help and personal data tools. */
+header{position:relative}
+.top-menu{position:absolute;top:calc(env(safe-area-inset-top) + 14px);right:20px;z-index:4}
+#more{display:grid;place-items:center;min-width:32px;height:32px;padding:0;background:transparent;border:0;border-radius:0;color:#657068;font-size:21px;line-height:1;letter-spacing:1px}
+.more-menu{position:absolute;top:39px;right:0;min-width:118px;padding:5px;background:#fffdfa;border:1px solid #d8d0c8;border-radius:9px;box-shadow:0 8px 24px #3e35251a}
+.more-menu::before{content:"";position:absolute;top:-5px;right:11px;width:8px;height:8px;background:#fffdfa;border-left:1px solid #d8d0c8;border-top:1px solid #d8d0c8;transform:rotate(45deg)}
+.more-menu button{position:relative;z-index:1;display:block;width:100%;padding:9px 10px;border-radius:6px;background:none;text-align:left;color:#45554d;font-size:14px}
+.more-menu button:hover,.more-menu button:focus-visible{background:#f1ece6}
+.data-copy{margin:0;color:#6d736e;font-size:14px;line-height:1.75}
+.data-actions{display:flex;gap:10px;margin-top:24px}.outline-button{padding:11px 17px;border:1px solid #b9b2aa;border-radius:8px;background:transparent;color:#526057}
+
+/* Welcome page: a quiet hand-journal stamp before the notebook opens. */
+.welcome{position:fixed;inset:0;z-index:100;display:grid;place-items:center;min-height:100dvh;padding:calc(env(safe-area-inset-top) + 34px) 26px calc(env(safe-area-inset-bottom) + 34px);background:#f7f1e9;background-image:radial-gradient(#a896831c .7px,transparent .8px),radial-gradient(#fffdf9b5 .7px,transparent .8px);background-size:7px 7px,13px 13px;background-position:0 0,3px 4px;color:#354f45;transition:opacity .38s ease,visibility .38s ease}.welcome.is-leaving{opacity:0;visibility:hidden;pointer-events:none}.welcome-enter{width:min(100%,390px);min-height:min(620px,77dvh);display:flex;flex-direction:column;align-items:center;justify-content:center;border:0;background:transparent;color:inherit;text-align:center}.welcome-brand{position:absolute;top:calc(env(safe-area-inset-top) + 38px);font-size:15px;letter-spacing:.18em;font-weight:650;color:#54645d}.stamp-scene{position:relative;display:block;width:218px;height:178px;margin-bottom:40px}.note-paper{position:absolute;width:132px;height:98px;border:1px solid #d8cec3;background:#fffdf9;box-shadow:0 10px 22px #5b4b3b14}.note-back{left:27px;top:45px;transform:rotate(-8deg);background:repeating-linear-gradient(0deg,#fffdf9 0 17px,#eee5dc 18px 19px)}.note-front{left:58px;top:34px;transform:rotate(6deg);background:repeating-linear-gradient(0deg,#fffdf9 0 17px,#eee5dc 18px 19px)}.note-front::after{content:"";position:absolute;left:19px;top:23px;width:57px;height:7px;border-radius:999px;background:#c5d3b8;box-shadow:0 18px 0 #dfb3a6,0 36px 0 #a9b6df}.stamp{position:absolute;left:67px;top:16px;width:88px;height:88px;border:4px solid #a6615e;border-radius:50%;display:grid;place-items:center;background:#f7eee8;box-shadow:inset 0 0 0 5px #f7eee8,0 5px 0 #8e554f,0 12px 20px #6f4a4430;transform:rotate(-5deg);animation:stampFloat 2.8s ease-in-out infinite}.stamp::before{content:"今日打卡";position:absolute;top:13px;font-size:9px;font-weight:700;letter-spacing:.12em;color:#a6615e}.stamp span{margin-top:12px;font-family:Arial,sans-serif;font-size:43px;line-height:1;font-weight:700;color:#a6615e}.stamp-shadow{position:absolute;left:47px;bottom:2px;width:132px;height:14px;border-radius:50%;background:#6b58451c;filter:blur(4px)}.welcome-title{font-size:24px;font-weight:720;letter-spacing:.03em}.welcome-copy{margin-top:14px;font-size:15px;color:#827a71}.welcome-english{margin-top:12px;font-family:ui-monospace,SFMono-Regular,monospace;font-size:11px;letter-spacing:.24em;color:#a6615e}.welcome-enter:active .stamp{animation:none;transform:translateY(8px) rotate(-5deg);box-shadow:inset 0 0 0 5px #f7eee8,0 1px 0 #8e554f,0 4px 10px #6f4a4430}@keyframes stampFloat{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-7px) rotate(-5deg)}}@media (prefers-reduced-motion:reduce){.stamp{animation:none}.welcome{transition:none}}
+
+/* Welcome copy uses the stamp ink and reads as one compact action. */
+.welcome-copy,.welcome-english{color:#a6615e}.welcome-copy{margin-top:9px}.welcome-english{margin-top:6px}
+
+/* Welcome typography: two quiet inks only — deep cocoa and light warm brown. */
+.welcome{color:#5c514a}.welcome-brand,.welcome-title{color:#5c514a}.stamp{border-color:#a98270;box-shadow:inset 0 0 0 5px #f7eee8,0 5px 0 #8d6d60,0 12px 20px #6f4a4430}.stamp::before,.stamp span,.welcome-copy,.welcome-english{color:#a98270}
+
+/* A quiet maker’s mark, kept separate from the welcome action. */
+.welcome-credit{position:absolute;top:calc(env(safe-area-inset-top) + 22px);left:22px;font-size:10px;line-height:1;letter-spacing:.08em;font-weight:600;color:#a98270;opacity:.78;pointer-events:none}
+@media (min-width:700px){.welcome-credit{top:28px;left:30px}}
+
+/* The stamp mark is an inline SVG so its check stays crisp at every size. */
+.stamp::before{content:none}.stamp-check{width:54px;height:54px;display:block;transform:translateY(2px)}.stamp-check path{stroke:#a98270;stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+
+/* Supplied hand-drawn paper replaces the CSS note layers on the welcome page. */
+.note-paper{display:none}.notepaper-art{position:absolute;left:50%;top:31px;width:190px;height:auto;transform:translateX(-50%);filter:drop-shadow(0 9px 12px #5b4b3b18);pointer-events:none}.stamp{z-index:1}
+
+/* Supplied hand-drawn stamp replaces the CSS circle on the welcome page. */
+.stamp{display:none}.stamp-art{position:absolute;z-index:2;left:55px;top:3px;width:108px;height:auto;transform:rotate(-5deg);animation:stampFloat 2.8s ease-in-out infinite;filter:drop-shadow(0 8px 9px #6f4a4430);pointer-events:none}.welcome-enter:active .stamp-art{animation:none;transform:translateY(8px) rotate(-5deg)}
